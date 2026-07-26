@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>深入理解 AI Agent - 设计原理与工程实践</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h1><a href="index.html">深入理解 AI Agent</a></h1>
+      <p class="subtitle">设计原理与工程实践</p>
+    </div>
+    <ul class="nav-list">
+      <li class="active"><a href="index.html">首页</a></li>
+      <li><a href="intro.html">引言</a></li>
+      <li><a href="ch1.html">第1章 Agent 基础知识</a></li>
+      <li><a href="ch2.html">第2章 上下文工程</a></li>
+      <li><a href="ch3.html">第3章 用户记忆和知识库</a></li>
+      <li><a href="ch4.html">第4章 工具</a></li>
+      <li><a href="ch5.html">第5章 Coding Agent 与代码生成</a></li>
+      <li><a href="ch6.html">第6章 Agent 的评估</a></li>
+      <li><a href="ch7.html">第7章 模型后训练</a></li>
+      <li><a href="ch8.html">第8章 Agent 的持续进化</a></li>
+      <li><a href="ch9.html">第9章 多模态与实时交互</a></li>
+      <li><a href="ch10.html">第10章 多 Agent 协作</a></li>
+      <li><a href="afterword.html">后记</a></li>
+      <li><a href="answers.html">思考题参考答案</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <p>Agent = LLM + 上下文 + 工具</p>
+    </div>
+  </aside>
+  
+  <main class="content">
+    <button class="menu-toggle" id="menuToggle">☰ 目录</button>
+    <div class="hero">
+      <h1>深入理解 AI Agent</h1>
+      <p class="hero-subtitle">设计原理与工程实践</p>
+      <p class="hero-formula">Agent = LLM + 上下文 + 工具</p>
+      <p class="hero-desc">全书 10 章正文，从基础到生产；92 个配套实验，70+ 可独立运行。围绕核心公式，把 AI Agent 从原理讲到工程实战。</p>
+    </div>
+    
+    <div class="cards">
+      <a href="intro.html" class="card">
+        <div class="card-icon">📖</div>
+        <div class="card-body">
+          <h3>引言</h3>
+          <p>2025 年 8 月至 10 月，我在图灵《AI Agent 实战营》上进行了一系列技术讲座。讲座的初衷很简单：把 AI Agent 的设计从 “感觉驱动” 变成 “原则驱动”：不只是教大家跑通一个 Demo，而是深入理解 Agent 为什么要这样设计，每一个架构决策背后的取舍是什么。这本书正是从那...</p>
+        </div>
+      </a>
+      <a href="ch1.html" class="card">
+        <div class="card-icon">🚀</div>
+        <div class="card-body">
+          <h3>第1章 Agent 基础知识</h3>
+          <p>如果你用 Cursor 写过代码，看它搜索代码库、编辑多个文件、运行测试直到通过；用 Deep Research 调研过一个课题，看它反复搜索、阅读，总结出一份完整报告；用 Manus 操控浏览器帮你完成在线任务；让豆包手机助手帮你在手机上订票、发消息；或者让 Pine AI 替你打电话给运营商协商...</p>
+        </div>
+      </a>
+      <a href="ch2.html" class="card">
+        <div class="card-icon">🎯</div>
+        <div class="card-body">
+          <h3>第2章 上下文工程</h3>
+          <p>第一章把上下文比作 Agent 的“眼睛”——Agent 只能基于它看到的信息做决策。上下文的设计和管理——即上下文工程（Context Engineering）——不管怎么强调都不为过。所谓上下文，就是每次你和 AI 对话时，AI 实际“看到”的全部信息。它不仅包含你们之前聊了什么（对话历史），还...</p>
+        </div>
+      </a>
+      <a href="ch3.html" class="card">
+        <div class="card-icon">📚</div>
+        <div class="card-body">
+          <h3>第3章 用户记忆和知识库</h3>
+          <p>上一章解决的是单次交互的上下文管理。这一章要处理一个更难的问题：如何让 Agent 在对话结束后仍然记住用户、记住知识。</p>
+        </div>
+      </a>
+      <a href="ch4.html" class="card">
+        <div class="card-icon">🛠️</div>
+        <div class="card-body">
+          <h3>第4章 工具</h3>
+          <p>在科幻电影《Her》中，AI 助手 Samantha 能主动整理邮件、识别出情感复杂的信件并提议润色回复，能代表主角处理出版事宜，还能在不同的沟通渠道间无缝切换。她的智能之所以动人，是因为她拥有强大的工具——连接语言“大脑”与真实数字世界的“手脚和感官”。</p>
+        </div>
+      </a>
+      <a href="ch5.html" class="card">
+        <div class="card-icon">💻</div>
+        <div class="card-body">
+          <h3>第5章 Coding Agent 与代码生成</h3>
+          <p>前面的章节分别深入了上下文工程（第二、三章）和工具设计（第四章）。本章将这些构件组合在一起，回答一个核心问题：一个能处理任意任务的通用 Agent，它的架构长什么样？</p>
+        </div>
+      </a>
+      <a href="ch6.html" class="card">
+        <div class="card-icon">📊</div>
+        <div class="card-body">
+          <h3>第6章 Agent 的评估</h3>
+          <p>构建 Agent 系统时，开发者面对大量设计选择，而它们往往没有显而易见的正确答案：</p>
+        </div>
+      </a>
+      <a href="ch7.html" class="card">
+        <div class="card-icon">🧠</div>
+        <div class="card-body">
+          <h3>第7章 模型后训练</h3>
+          <p>本书的核心公式是 Agent = LLM + 上下文 + 工具。本章聚焦于优化 LLM 这个“大脑”——通过后训练让模型更好地利用上下文和工具，从而提升整个 Agent 系统的能力。第六章结尾指出，评估体系与仿真环境是后训练的两块基石：评估环境为训练提供练习场，评估指标为训练定义目标。本章就建立在这...</p>
+        </div>
+      </a>
+      <a href="ch8.html" class="card">
+        <div class="card-icon">🔄</div>
+        <div class="card-body">
+          <h3>第8章 Agent 的持续进化</h3>
+          <p>今天的 Agent 面临一个鲜明的能力悖论：它可以零样本解决从未见过的复杂任务，却可能在处理了一万次相似任务之后，第二天仍然犯下第一天的错误。能否自主从经验中学习，正在成为 Agent 从“会完成任务”走向“能够可靠工作”的关键能力，也是下一代模型的核心研究课题。然而，目前模型本身的持续学习能力仍远...</p>
+        </div>
+      </a>
+      <a href="ch9.html" class="card">
+        <div class="card-icon">🎙️</div>
+        <div class="card-body">
+          <h3>第9章 多模态与实时交互</h3>
+          <p>前面的章节探讨了 Agent 在文本世界中的设计——通过上下文、工具和代码与数字系统交互。然而，Agent 的交互对象不仅仅是文本和 API。当 Agent 需要听懂用户的语音指令、在屏幕上找到并点击正确的按钮、或控制机械臂精确抓取物体时，它进入了一个全新的领域：多模态实时交互——从纯文本输入输出扩...</p>
+        </div>
+      </a>
+      <a href="ch10.html" class="card">
+        <div class="card-icon">🤝</div>
+        <div class="card-body">
+          <h3>第10章 多 Agent 协作</h3>
+          <p>在 OpenAI 曾提出的 AI 能力五等级描述（Level 1 对话者、Level 2 思考者（Reasoners）、Level 3 智能体、Level 4 创新者、Level 5 组织 Organizations）中，多 Agent 协作常被类比为通向第五级的路径之一——需要说明的是，此处 Or...</p>
+        </div>
+      </a>
+      <a href="afterword.html" class="card">
+        <div class="card-icon">✍️</div>
+        <div class="card-body">
+          <h3>后记</h3>
+          <p>本书开篇提出了一个公式：Agent = LLM + 上下文 + 工具。全书十章，都在这三个词里展开。</p>
+        </div>
+      </a>
+      <a href="answers.html" class="card">
+        <div class="card-icon">💡</div>
+        <div class="card-body">
+          <h3>思考题参考答案</h3>
+          <p>本文件汇总全书十章思考题的参考答案提纲。思考题多为开放性问题，答案不唯一。参考答案为 AI 生成，人工略作审校，仅供读者对照启发之用。建议读者使用 LLM 结合书稿内容进一步讨论这些问题。</p>
+        </div>
+      </a>
+    </div>
+  </main>
+</div>
+<script>
+document.getElementById('menuToggle').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.toggle('open');
+});
+document.querySelector('.content').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.remove('open');
+});
+</script>
+</body>
+</html>
